@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94A7F99DAD231C3D85B5C412 /* Pods_PocketChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6C9144F482433D6CA39020A /* Pods_PocketChat.framework */; };
+		CD4304D226629D9200F4D06B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4304D126629D9200F4D06B /* AppDelegate.swift */; };
+		CD4304D426629D9200F4D06B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4304D326629D9200F4D06B /* SceneDelegate.swift */; };
+		CD4304DB26629D9300F4D06B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4304DA26629D9300F4D06B /* Assets.xcassets */; };
+		CD4304FD2662A05900F4D06B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4304F52662A05900F4D06B /* RegisterViewController.swift */; };
+		CD4305012662A05900F4D06B /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4304F92662A05900F4D06B /* OnBoardingViewController.swift */; };
+		CD4305022662A05900F4D06B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4304FA2662A05900F4D06B /* LoginViewController.swift */; };
+		CD4305062662A06D00F4D06B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4305052662A06D00F4D06B /* Main.storyboard */; };
+		CD4305092662A09500F4D06B /* PageControlSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4305082662A09500F4D06B /* PageControlSetup.swift */; };
+		CD43050B2662A0AE00F4D06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD43050A2662A0AE00F4D06B /* LaunchScreen.storyboard */; };
+		CD4305102662A1CB00F4D06B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD43050F2662A1CB00F4D06B /* GoogleService-Info.plist */; };
+		CD43051A266D2F0A00F4D06B /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD430519266D2F0A00F4D06B /* DatabaseManager.swift */; };
+		CD43051C266D57B700F4D06B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43051B266D57B700F4D06B /* ProfileViewController.swift */; };
+		CD43051E266EAE3400F4D06B /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43051D266EAE3400F4D06B /* Notification.swift */; };
+		CD430522266F8BA600F4D06B /* NewConversationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD430521266F8BA600F4D06B /* NewConversationController.swift */; };
+		CD430524266F9D3500F4D06B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD430523266F9D3500F4D06B /* StorageManager.swift */; };
+		CD43054C267D1A8C00F4D06B /* ExtensionUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43054B267D1A8C00F4D06B /* ExtensionUIView.swift */; };
+		CD43054E267D1C8100F4D06B /* ConversationsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43054D267D1C8100F4D06B /* ConversationsModels.swift */; };
+		CD430550267D1C9100F4D06B /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43054F267D1C9100F4D06B /* ChatModels.swift */; };
+		CD430552267D1CA100F4D06B /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD430551267D1CA100F4D06B /* SearchResult.swift */; };
+		CD430554267D1CB400F4D06B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD430553267D1CB400F4D06B /* ProfileViewModel.swift */; };
+		CD430557267D1F3000F4D06B /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD430556267D1F3000F4D06B /* ConversationTableViewCell.swift */; };
+		CD430559267D1F6C00F4D06B /* NewConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD430558267D1F6C00F4D06B /* NewConversationCell.swift */; };
+		CD43055B267D1FE700F4D06B /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43055A267D1FE700F4D06B /* ConversationsViewController.swift */; };
+		CD43055D267D201900F4D06B /* PhotoViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43055C267D201900F4D06B /* PhotoViewerViewController.swift */; };
+		CD43055F267D234B00F4D06B /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD43055E267D234B00F4D06B /* ChatViewController.swift */; };
+		CD430561267D26BA00F4D06B /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD430560267D26BA00F4D06B /* LocationPickerViewController.swift */; };
+		CDC4A543268E35640064668C /* ExtensionUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDC4A542268E35640064668C /* ExtensionUIColor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C6C9144F482433D6CA39020A /* Pods_PocketChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PocketChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4304CE26629D9200F4D06B /* PocketChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4304D126629D9200F4D06B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD4304D326629D9200F4D06B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD4304DA26629D9300F4D06B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD4304DF26629D9300F4D06B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4304F52662A05900F4D06B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CD4304F92662A05900F4D06B /* OnBoardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		CD4304FA2662A05900F4D06B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CD4305052662A06D00F4D06B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CD4305082662A09500F4D06B /* PageControlSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageControlSetup.swift; sourceTree = "<group>"; };
+		CD43050A2662A0AE00F4D06B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD43050F2662A1CB00F4D06B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD430519266D2F0A00F4D06B /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DatabaseManager.swift; path = ../../../../../pocketChatSecond/DatabaseManager.swift; sourceTree = "<group>"; };
+		CD43051B266D57B700F4D06B /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../../../../../pocketChatSecond/ProfileViewController.swift; sourceTree = "<group>"; };
+		CD43051D266EAE3400F4D06B /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Notification.swift; path = ../../../../../pocketChatSecond/Notification.swift; sourceTree = "<group>"; };
+		CD430521266F8BA600F4D06B /* NewConversationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewConversationController.swift; path = ../../../../../pocketChatSecond/NewConversationController.swift; sourceTree = "<group>"; };
+		CD430523266F9D3500F4D06B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StorageManager.swift; path = ../../../../../pocketChatSecond/StorageManager.swift; sourceTree = "<group>"; };
+		CD43054B267D1A8C00F4D06B /* ExtensionUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExtensionUIView.swift; path = ../../../../../../../Downloads/TabBarTest/TabBarTest/ExtensionUIView.swift; sourceTree = "<group>"; };
+		CD43054D267D1C8100F4D06B /* ConversationsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConversationsModels.swift; path = ../../../../../../../Downloads/TabBarTest/TabBarTest/ConversationsModels.swift; sourceTree = "<group>"; };
+		CD43054F267D1C9100F4D06B /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatModels.swift; path = ../../../../../../../Downloads/TabBarTest/TabBarTest/ChatModels.swift; sourceTree = "<group>"; };
+		CD430551267D1CA100F4D06B /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchResult.swift; path = ../../../../../../../Downloads/TabBarTest/TabBarTest/SearchResult.swift; sourceTree = "<group>"; };
+		CD430553267D1CB400F4D06B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewModel.swift; path = ../../../../../../../Downloads/TabBarTest/TabBarTest/ProfileViewModel.swift; sourceTree = "<group>"; };
+		CD430556267D1F3000F4D06B /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		CD430558267D1F6C00F4D06B /* NewConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewConversationCell.swift; sourceTree = "<group>"; };
+		CD43055A267D1FE700F4D06B /* ConversationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
+		CD43055C267D201900F4D06B /* PhotoViewerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewerViewController.swift; sourceTree = "<group>"; };
+		CD43055E267D234B00F4D06B /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CD430560267D26BA00F4D06B /* LocationPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
+		CDC4A542268E35640064668C /* ExtensionUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionUIColor.swift; sourceTree = "<group>"; };
+		F84E7122693219F6AE661D00 /* Pods-PocketChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketChat.release.xcconfig"; path = "Target Support Files/Pods-PocketChat/Pods-PocketChat.release.xcconfig"; sourceTree = "<group>"; };
+		FAF4718A661A850455E8C339 /* Pods-PocketChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PocketChat.debug.xcconfig"; path = "Target Support Files/Pods-PocketChat/Pods-PocketChat.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD4304CB26629D9200F4D06B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94A7F99DAD231C3D85B5C412 /* Pods_PocketChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DD54AB4DCA8A0AFDC907130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6C9144F482433D6CA39020A /* Pods_PocketChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8BE8565E6714498C018E0498 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAF4718A661A850455E8C339 /* Pods-PocketChat.debug.xcconfig */,
+				F84E7122693219F6AE661D00 /* Pods-PocketChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD4304C526629D9200F4D06B = {
+			isa = PBXGroup;
+			children = (
+				CD4304D026629D9200F4D06B /* PocketChat */,
+				CD4304CF26629D9200F4D06B /* Products */,
+				8BE8565E6714498C018E0498 /* Pods */,
+				2DD54AB4DCA8A0AFDC907130 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD4304CF26629D9200F4D06B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4304CE26629D9200F4D06B /* PocketChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD4304D026629D9200F4D06B /* PocketChat */ = {
+			isa = PBXGroup;
+			children = (
+				CD430555267D1F1300F4D06B /* TableViewCells */,
+				CD4304D126629D9200F4D06B /* AppDelegate.swift */,
+				CD4304D326629D9200F4D06B /* SceneDelegate.swift */,
+				CD43050C2662A10700F4D06B /* Managers */,
+				CD4305072662A09500F4D06B /* UIViews models */,
+				CD4304F42662A05900F4D06B /* Controllers */,
+				CD4304EC2662A01400F4D06B /* Extensions */,
+				CD4304E52662A00100F4D06B /* Models */,
+				CD4305052662A06D00F4D06B /* Main.storyboard */,
+				CD4304DA26629D9300F4D06B /* Assets.xcassets */,
+				CD43050A2662A0AE00F4D06B /* LaunchScreen.storyboard */,
+				CD4304DF26629D9300F4D06B /* Info.plist */,
+				CD43050F2662A1CB00F4D06B /* GoogleService-Info.plist */,
+			);
+			path = PocketChat;
+			sourceTree = "<group>";
+		};
+		CD4304E52662A00100F4D06B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CD43054D267D1C8100F4D06B /* ConversationsModels.swift */,
+				CD43054F267D1C9100F4D06B /* ChatModels.swift */,
+				CD430551267D1CA100F4D06B /* SearchResult.swift */,
+				CD430553267D1CB400F4D06B /* ProfileViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CD4304EC2662A01400F4D06B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD43051D266EAE3400F4D06B /* Notification.swift */,
+				CD43054B267D1A8C00F4D06B /* ExtensionUIView.swift */,
+				CDC4A542268E35640064668C /* ExtensionUIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD4304F42662A05900F4D06B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD4304F52662A05900F4D06B /* RegisterViewController.swift */,
+				CD4304F92662A05900F4D06B /* OnBoardingViewController.swift */,
+				CD4304FA2662A05900F4D06B /* LoginViewController.swift */,
+				CD43051B266D57B700F4D06B /* ProfileViewController.swift */,
+				CD430521266F8BA600F4D06B /* NewConversationController.swift */,
+				CD43055A267D1FE700F4D06B /* ConversationsViewController.swift */,
+				CD43055C267D201900F4D06B /* PhotoViewerViewController.swift */,
+				CD43055E267D234B00F4D06B /* ChatViewController.swift */,
+				CD430560267D26BA00F4D06B /* LocationPickerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CD4305072662A09500F4D06B /* UIViews models */ = {
+			isa = PBXGroup;
+			children = (
+				CD4305082662A09500F4D06B /* PageControlSetup.swift */,
+			);
+			path = "UIViews models";
+			sourceTree = "<group>";
+		};
+		CD43050C2662A10700F4D06B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CD430519266D2F0A00F4D06B /* DatabaseManager.swift */,
+				CD430523266F9D3500F4D06B /* StorageManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		CD430555267D1F1300F4D06B /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				CD430556267D1F3000F4D06B /* ConversationTableViewCell.swift */,
+				CD430558267D1F6C00F4D06B /* NewConversationCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD4304CD26629D9200F4D06B /* PocketChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4304E226629D9300F4D06B /* Build configuration list for PBXNativeTarget "PocketChat" */;
+			buildPhases = (
+				E439A6D32AB5F12A67E072E2 /* [CP] Check Pods Manifest.lock */,
+				CD4304CA26629D9200F4D06B /* Sources */,
+				CD4304CB26629D9200F4D06B /* Frameworks */,
+				CD4304CC26629D9200F4D06B /* Resources */,
+				B3D6ABC27513CA58E6361D03 /* [CP] Embed Pods Frameworks */,
+				049C30DC79D828E3F231B6BD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PocketChat;
+			productName = PocketChat;
+			productReference = CD4304CE26629D9200F4D06B /* PocketChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD4304C626629D9200F4D06B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CD4304CD26629D9200F4D06B = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = CD4304C926629D9200F4D06B /* Build configuration list for PBXProject "PocketChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD4304C526629D9200F4D06B;
+			productRefGroup = CD4304CF26629D9200F4D06B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD4304CD26629D9200F4D06B /* PocketChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD4304CC26629D9200F4D06B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD43050B2662A0AE00F4D06B /* LaunchScreen.storyboard in Resources */,
+				CD4305102662A1CB00F4D06B /* GoogleService-Info.plist in Resources */,
+				CD4305062662A06D00F4D06B /* Main.storyboard in Resources */,
+				CD4304DB26629D9300F4D06B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		049C30DC79D828E3F231B6BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketChat/Pods-PocketChat-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketChat/Pods-PocketChat-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketChat/Pods-PocketChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3D6ABC27513CA58E6361D03 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketChat/Pods-PocketChat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PocketChat/Pods-PocketChat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PocketChat/Pods-PocketChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E439A6D32AB5F12A67E072E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PocketChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD4304CA26629D9200F4D06B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD430550267D1C9100F4D06B /* ChatModels.swift in Sources */,
+				CD4305022662A05900F4D06B /* LoginViewController.swift in Sources */,
+				CD43054E267D1C8100F4D06B /* ConversationsModels.swift in Sources */,
+				CD43051C266D57B700F4D06B /* ProfileViewController.swift in Sources */,
+				CDC4A543268E35640064668C /* ExtensionUIColor.swift in Sources */,
+				CD4304FD2662A05900F4D06B /* RegisterViewController.swift in Sources */,
+				CD430561267D26BA00F4D06B /* LocationPickerViewController.swift in Sources */,
+				CD43055D267D201900F4D06B /* PhotoViewerViewController.swift in Sources */,
+				CD430557267D1F3000F4D06B /* ConversationTableViewCell.swift in Sources */,
+				CD430552267D1CA100F4D06B /* SearchResult.swift in Sources */,
+				CD43051A266D2F0A00F4D06B /* DatabaseManager.swift in Sources */,
+				CD43054C267D1A8C00F4D06B /* ExtensionUIView.swift in Sources */,
+				CD430554267D1CB400F4D06B /* ProfileViewModel.swift in Sources */,
+				CD430522266F8BA600F4D06B /* NewConversationController.swift in Sources */,
+				CD430524266F9D3500F4D06B /* StorageManager.swift in Sources */,
+				CD430559267D1F6C00F4D06B /* NewConversationCell.swift in Sources */,
+				CD43055F267D234B00F4D06B /* ChatViewController.swift in Sources */,
+				CD4305012662A05900F4D06B /* OnBoardingViewController.swift in Sources */,
+				CD4305092662A09500F4D06B /* PageControlSetup.swift in Sources */,
+				CD43051E266EAE3400F4D06B /* Notification.swift in Sources */,
+				CD4304D226629D9200F4D06B /* AppDelegate.swift in Sources */,
+				CD4304D426629D9200F4D06B /* SceneDelegate.swift in Sources */,
+				CD43055B267D1FE700F4D06B /* ConversationsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CD4304E026629D9300F4D06B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD4304E126629D9300F4D06B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD4304E326629D9300F4D06B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAF4718A661A850455E8C339 /* Pods-PocketChat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T998FMSKS;
+				INFOPLIST_FILE = PocketChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketchat.PocketChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CD4304E426629D9300F4D06B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F84E7122693219F6AE661D00 /* Pods-PocketChat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8T998FMSKS;
+				INFOPLIST_FILE = PocketChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pocketchat.PocketChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD4304C926629D9200F4D06B /* Build configuration list for PBXProject "PocketChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4304E026629D9300F4D06B /* Debug */,
+				CD4304E126629D9300F4D06B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4304E226629D9300F4D06B /* Build configuration list for PBXNativeTarget "PocketChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4304E326629D9300F4D06B /* Debug */,
+				CD4304E426629D9300F4D06B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD4304C626629D9200F4D06B /* Project object */;
+}
